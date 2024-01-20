@@ -1,0 +1,15 @@
+name: "phi-embeddings"
+license: "Apache 2.0"
+urls:
+- https://huggingface.co/TheBloke/phi-2-GGUF
+description: |
+    Bert model that can be used for embeddings
+config_file: |
+    parameters:
+      model: phi-2.Q8_0.gguf
+    backend: llama-embeddings
+    embeddings: true
+files:
+- filename: "phi-2.Q8_0.gguf"
+  sha256: "26a44c5a2bc22f33a1271cdf1accb689028141a6cb12e97671740a9803d23c63"
+  uri: "https://huggingface.co/TheBloke/phi-2-GGUF/resolve/main/phi-2.Q8_0.gguf"
