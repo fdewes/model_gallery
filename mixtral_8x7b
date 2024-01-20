@@ -1,0 +1,30 @@
+name: "mixtral_8x7b"
+
+description: |
+  Mixtral on 24GB GPU
+
+license: "Apache 2.0"
+urls:
+- https://github.com/openlm-research/open_llama
+
+config_file: |
+    backend: llama
+    parameters:
+      model: mixtral-8x7b-instruct-v0.1.Q4_0.gguf
+    context_size: 1024
+    template:
+      completion: mixtral-instruct-completion
+      chat: mixtral-instruct-chat
+files:
+    - filename: "mixtral-8x7b-instruct-v0.1.Q4_0.gguf"
+      sha256: "0c57465507f21bed4364fca37efd310bee92e25a4ce4f5678ef9b44e95830e4e"
+      uri: "https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-8x7b-instruct-v0.1.Q4_0.gguf"
+
+prompt_templates:
+- name: "mixtral-instruct-completion"
+  content: |
+      {{.Input}}
+- name: "mixtral-instruct-chat"
+  content: |
+    <s>[INST] {{.Input}} [/INST]  
+
