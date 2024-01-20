@@ -1,4 +1,4 @@
-name: "mixtral_8x7b"
+name: "mixtral-instruct"
 
 description: |
   Mixtral on 24GB GPU
