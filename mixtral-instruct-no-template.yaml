@@ -14,7 +14,7 @@ config_file: |
     context_size: 1024
     gpu_layers: 28
     template:
-      completion: mixtral-instruct-completion
+      completion: mixtral-instruct-completion-no-template
       chat: mixtral-instruct-chat
 files:
     - filename: "mixtral-8x7b-instruct-v0.1.Q4_0.gguf"
@@ -22,9 +22,9 @@ files:
       uri: "https://huggingface.co/TheBloke/Mixtral-8x7B-Instruct-v0.1-GGUF/resolve/main/mixtral-8x7b-instruct-v0.1.Q4_0.gguf"
 
 prompt_templates:
-- name: "mixtral-instruct-completion"
+- name: "mixtral-instruct-completion-no-template"
   content: |
       {{.Input}}
-- name: "mixtral-instruct-chat"
+- name: "mixtral-instruct-chat-no-template"
   content: |
     {{.Input}}
