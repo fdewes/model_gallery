@@ -15,7 +15,7 @@ config_file: |
     gpu_layers: 28
     template:
       completion: mixtral-instruct-completion-no-template
-      chat: mixtral-instruct-chat
+      chat: mixtral-instruct-chat-no-template
 files:
     - filename: "mixtral-8x7b-instruct-v0.1.Q4_0.gguf"
       sha256: "0c57465507f21bed4364fca37efd310bee92e25a4ce4f5678ef9b44e95830e4e"
