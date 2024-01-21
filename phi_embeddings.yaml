@@ -7,7 +7,7 @@ description: |
 config_file: |
     parameters:
       model: phi-2.Q8_0.gguf
-    backend: llama-stable
+    backend: llama
     embeddings: true
     context_size: 1024
     gpu_layers: 128
