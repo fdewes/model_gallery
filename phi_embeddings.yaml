@@ -3,7 +3,7 @@ license: "Apache 2.0"
 urls:
 - https://huggingface.co/TheBloke/phi-2-GGUF
 description: |
-    Bert model that can be used for embeddings
+    Phi model that can be used for embeddings
 config_file: |
     parameters:
       model: phi-2.Q8_0.gguf
