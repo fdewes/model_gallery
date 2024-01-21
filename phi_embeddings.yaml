@@ -9,6 +9,8 @@ config_file: |
       model: phi-2.Q8_0.gguf
     backend: llama-stable
     embeddings: true
+    context_size: 1024
+    gpu_layers: 128
     template:
       completion: completion-no-template
       chat: chat-no-template
