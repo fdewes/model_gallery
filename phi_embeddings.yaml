@@ -7,7 +7,7 @@ description: |
 config_file: |
     parameters:
       model: phi-2.Q8_0.gguf
-    backend: llama
+    backend: llama-stable
     embeddings: true
     template:
       completion: completion-no-template
