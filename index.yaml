@@ -1,0 +1,4 @@
+## Mixtral
+- url: "github:fdewes/model-gallery/mixtral-instruct.yaml"
+  name: "mixtral-instruct"
+  license: other
